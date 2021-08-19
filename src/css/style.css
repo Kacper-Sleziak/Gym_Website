@@ -6,14 +6,17 @@
 
 
 body {
-    background-image:url(../img/bar.jpg); 
+    background-image:url(../img/bar.jpg);
+    background-color: rgb(43, 93, 134, 0.8);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
 
 #navbar {
     display: flex;
@@ -63,7 +66,6 @@ body {
 
 .links {
     display: flex;
-    font-size: 40px;
     color: white;
 }
 
@@ -73,8 +75,8 @@ body {
 }
 
 .links a:hover {
-    text-decoration: underline #6B7AA1 2px; 
-    text-decoration-style: initial;
+    letter-spacing: 1px;
+    transition-duration: 0.5s;
 }
 
 .navbar__icons {
@@ -86,6 +88,7 @@ body {
 }
 
 .navbar__icons img {
+    background-color:	rgb(255,255,255, 0.8);
     width: 50px;
     height: 50px;
     border-radius: 30%;
@@ -94,7 +97,8 @@ body {
 }
 
 .navbar__icons img:hover {
-    border: outset 1px #11324D; 
+    background-color: rgba(142, 206, 226, 0.671);
+    transition: 0.2s;
 }
 
 .link {
@@ -146,67 +150,124 @@ header {
     font-size: 40px;
 }
 
-main{
+main {
     position: relative;
     box-sizing: border-box;
 }
 
-.information_section{
-    background-color: #191c1a;
-    height: 1100px;
+.information_section {
+    background-color: rgb(255, 255, 255);
+    height: 939px;
     width: 100%;
 }
 
-.header_box{
-    letter-spacing: 5px;
-    height: 300px;
-    width: 100%;
-    border-radius: 0 0 200px 200px;
-    border: outset 1px white;
-    background-color: #11324D;
-    margin-left:auto;
-    margin-right: auto;
+.header_box {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    font-size: 100px;
-    color:#B7BDBA;
-
+    letter-spacing: 5px;
+    height: 200px;
+    width: 100%;
+    border: outset 1px white;
+    background-color:#434a4a;                       
+    font-size: 80px;
+    color:white;
+    margin-bottom: 40px;
 }
 
-#information_main_box{
+
+#information_main_box {
     display: flex;
-    width: 100%;
-    height: 800px;
+    margin: 0 320px 0 320px;
+    height: 330px;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.graphic_info_box{
-    border: outset 1px white;
+.graphic_info_box {
+    font-size: 15px;
+    border: outset 1px #B7BDBA;
+    box-shadow: 5px 10px #B7BDBA;
     border-radius: 40px;
     text-align: center;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
 }
 
-.graphic_info_box:hover{
-    background-color: #262927;
+.graphic_info_box:hover {
+    background-color: #f3f3f3;
+    box-shadow: 2px 5px #B7BDBA;
+    margin: 0 0 0 0;
     transition: 0.5s;
 }
 
-.graphic_info_box img{
-    width: 175px;
-    height: 200;
+.graphic_info_box img {
+    width: 94px;
+    height: 106;
     justify-content: center;
     display: flex;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 20px auto;
 }
 
-.graphic_info_box h1{
-    color:#B7BDBA;
+.graphic_info_box h1 {
+    font-size: 25px;
+    color:black;
     margin: 0 0 30px 0;
 }
 
-.graphic_info_box span{
+.graphic_info_box span {
     color: rgb(109, 109, 109);
+    margin-bottom: 20px;
+}
+
+.end_info_section {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 300px 0 300px;
+    letter-spacing: 5px;
+    height: 200px;
+    width: 100%;
+    border: outset 1px white;
+    background-color:#434a4a;                       
+    font-size: 60px;
+    color:white;
+}
+
+.end_text1 {
+    text-align: center;
+    margin-right: auto;
+}
+
+.end_text2 {
+    margin-left: auto;
+    text-align: center;
+}
+
+.end_img_section {
+    display: flex;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.end_img_section span {
+    margin: 0 auto 0 auto;
+    font-size: 50px;
+    color: white;
+}
+
+footer{
+    box-sizing: border-box;
+    padding-top: 300px;
+    background-image: url(../img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 600px;
 }
