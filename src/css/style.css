@@ -325,7 +325,15 @@ footer {
 
 .menu h1 {
     padding-right: 20px;
+}
 
+.menu span{
+    cursor: pointer;
+}
+
+.menu span:hover{
+    transition: 0.2s;
+    color:rgba(255, 255, 255, 0.836);
 }
 
 .newsletter {
