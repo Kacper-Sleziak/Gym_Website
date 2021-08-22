@@ -16,28 +16,29 @@
         <nav>
 
             <div id="navbar">
+                <a class="logo_link" href="index.html">
+                    <div class="logo__navbar">
+                        <img src=".//src/img/logo.png" alt="Logo">
 
-                <div class="logo__navbar">
-                    <img src=".//src/img/logo.png" alt="Logo">
-
-                    <span>
-                        <p class="logo__navbar__text">TRAINING</p>
-                        <p class="logo__navbar__text">WORLD</p>
-                    </span>
-                </div>
+                        <span>
+                            <p class="logo__navbar__text">TRAINING</p>
+                            <p class="logo__navbar__text">WORLD</p>
+                        </span>
+                    </div>
+                </a>
 
                 <div class ="links__box">
                     <div class="links">
-                        <a class="link" href="">About us</a>
-                        <a class="link" href="">Classes</a>
-                        <a class="link" href="">Contact</a>
-                        <a class="link" href="">Blog</a>
+                        <a class="link" id="about_us" href="">About us</a>
+                        <a class="link" id="classes" href="">Classes</a>
+                        <a class="link" id="contact" href="#contact_scroll">Contact</a>
+                        <a class="link" id="blog" href="">Blog</a>
                     </div>
 
                     <div class = "navbar__icons">
-                        <a href=""><img src =".//src/img/fb.png" alt="Facebook link"></a>
-                        <a href=""><img src =".//src/img/ig.png" alt="Instagram link"></a>
-                        <a href=""><img src =".//src/img/tw.png" alt="Twitter link"></a>
+                        <a id ="fb" href=""><img src =".//src/img/fb.png" alt="Facebook link"></a>
+                        <a id ="ig" href=""><img src =".//src/img/ig.png" alt="Instagram link"></a>
+                        <a id ="tw" href=""><img src =".//src/img/tw.png" alt="Twitter link"></a>
                     </div>        
                 </div>       
             </div>
@@ -152,24 +153,14 @@
 
             </div>
 
-            <div class="end_info_section">
-                <div class="end_text1">
-                    <span>What are you<br> 
-                        waiting for?</span>
-                </div>
-
-                <div class="end_text2">
-                    <span>See you <br>
-                        on the gym!</span>
-                </div>
-            </div>
-
-            </div>
-
         </main>
 
         <footer>
-            <div class="footer_section">
+            <div class="div blur">
+
+            </div>
+            
+            <div class="footer_section" id="contact_scroll">
                 <div class="footer_1">
                     <div class="conntact">
                         <h1>Conntact</h1>
@@ -208,6 +199,6 @@
             </div>
         </footer> 
 
-
+        <script src=".//src/scripts/smooth_unhover.js"></script>
     </body>
 </html>

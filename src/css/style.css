@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -30,16 +31,20 @@ body {
 }
 
 .logo__navbar {
+    cursor: pointer;
     margin: 0 0 0 100px;
     display: flex;
     align-items: center;
+}
+
+.logo_link {
+    text-decoration: none;
 }
 
 .logo__navbar img {
     width: 100px;
     height: 100px;
 }
-
 
 .logo__navbar span {
     letter-spacing: 3px;
@@ -54,9 +59,10 @@ body {
 }
 
 .links__box {
+    box-sizing: border-box;
     display: flex;
     height: 100%;
-    width: 45%;
+    width: 50%;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,18 +71,45 @@ body {
 }
 
 .links {
+    cursor: pointer;
+    box-sizing: border-box;
     display: flex;
     color: white;
 }
 
-.links a {
-    display: flex;
-    transition-duration: 0.2s;
+.link {
+    border-radius: 20px;
 }
 
-.links a:hover {
-    letter-spacing: 1px;
-    transition-duration: 0.5s;
+#about_us {
+    text-align: center;
+    width: 128px;
+    height: 39px;
+}
+
+#classes {
+    text-align: center;
+    width: 122px;
+    height: 39px;
+}
+
+#contact {
+    text-align: center;
+    width: 121px;
+    height: 39px;
+}
+
+#blog {
+    text-align: center;
+    width: 80px;
+    height: 39px;
+}
+
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
 .navbar__icons {
@@ -96,9 +129,19 @@ body {
     margin-left: 20px;
 }
 
-.navbar__icons img:hover {
-    background-color: rgba(142, 206, 226, 0.671);
-    transition: 0.2s;
+#fb img:hover{
+    box-shadow: rgb(59, 89, 152) 3px 3px;
+    transition: 0.5s;
+}
+
+#ig img:hover{
+    box-shadow: rgb(253, 244, 151) 3px 3px;
+    transition: 0.5s;
+}
+
+#tw img:hover{
+    box-shadow: rgb(0, 172, 238) 3px 3px;
+    transition: 0.5s;
 }
 
 .link {
@@ -119,10 +162,9 @@ header {
     margin: 250px 0 400px 0;  
 }
 
-
 .header__join__us button {
     color: #d4dad7;
-    background: #328a57;
+    background-image: linear-gradient(to right, rgb(27, 95, 45) , rgb(41, 153, 71)); 
     opacity: 20%;
     border: outset 4px #B7BDBA;
     outline: white 2px;
@@ -132,13 +174,14 @@ header {
     width: 300px;
     height: 100px;
     letter-spacing: 2px;
-    transition: 0.5s;
+    cursor: pointer;
 }
 
 .header__join__us button:hover {
-    box-shadow: none;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.144);
+    background-blend-mode: multiply;
 } 
-
 
 .main__text {
     color:#B7BDBA;
@@ -156,8 +199,8 @@ main {
 }
 
 .information_section {
-    background-color: rgb(255, 255, 255);
-    height: 939px;
+    background-color: rgb(229, 231, 229);
+    height: 1200px;
     width: 100%;
 }
 
@@ -167,13 +210,17 @@ main {
     justify-content: center;
     align-content: center;
     text-align: center;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: outset 2px rgba(255, 255, 255, 0.253);
     letter-spacing: 5px;
     height: 200px;
     width: 100%;
-    background-color:#434a4a;                       
+    background-image: linear-gradient(to right, rgb(27, 95, 45) , rgb(41, 150, 70));                      
     font-size: 80px;
     color:white;
     margin-bottom: 40px;
+    margin-bottom: 150px;
 }
 
 
@@ -186,6 +233,7 @@ main {
 }
 
 .graphic_info_box {
+    background-color: rgb(229, 231, 229);
     box-sizing: border-box;
     font-size: 15px;
     border: outset 1px #B7BDBA;
@@ -217,30 +265,6 @@ main {
     margin-bottom: 20px;
 }
 
-.end_info_section {
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    padding: 0 300px 0 300px;
-    letter-spacing: 5px;
-    height: 200px;
-    width: 100%;
-    border: outset 1px white;
-    background-color:#434a4a;                       
-    font-size: 60px;
-    color:white;
-}
-
-.end_text1 {
-    text-align: center;
-    margin-right: auto;
-}
-
-.end_text2 {
-    margin-left: auto;
-    text-align: center;
-}
-
 .end_img_section span {
     margin: 0 auto 0 auto;
     font-size: 50px;
@@ -250,14 +274,20 @@ main {
 
 footer {
     box-sizing: border-box;
-    padding-top: 300px;
     background-image: url(../img/gym.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.8);
-    height: 650px;
+    height: 710px;
+}
+
+.blur {
+    background-image: linear-gradient(rgb(229, 231, 229), rgba(229, 231, 229, 0));
+    height: 40px;
+    width: 100%;
+    margin-bottom: 320px;
 }
 
 .footer_section {
@@ -271,7 +301,7 @@ footer {
     color: white;
 }
 
-.footer_1{
+.footer_1 {
     height: 200px;
     display: flex;
     box-sizing: border-box;
@@ -293,7 +323,7 @@ footer {
     text-align: left;
 }
 
-.menu h1{
+.menu h1 {
     padding-right: 20px;
 
 }
