@@ -18,6 +18,7 @@ body {
     box-sizing: border-box;
 }
 
+/*NAVBAR*/
 
 #navbar {
     display: flex;
@@ -61,8 +62,9 @@ body {
 .links__box {
     box-sizing: border-box;
     display: flex;
+    justify-content: space-evenly;
     height: 100%;
-    width: 50%;
+    width: 52%;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +74,7 @@ body {
 
 .links {
     cursor: pointer;
+    width: 530px;
     box-sizing: border-box;
     display: flex;
     color: white;
@@ -83,19 +86,19 @@ body {
 
 #about_us {
     text-align: center;
-    width: 128px;
+    width: 133px;
     height: 39px;
 }
 
 #classes {
     text-align: center;
-    width: 122px;
+    width: 127px;
     height: 39px;
 }
 
 #contact {
     text-align: center;
-    width: 121px;
+    width: 126px;
     height: 39px;
 }
 
@@ -121,7 +124,7 @@ body {
 }
 
 .navbar__icons img {
-    background-color:	rgb(255,255,255, 0.8);
+    background-color:rgb(255,255,255, 0.8);
     width: 50px;
     height: 50px;
     border-radius: 30%;
@@ -151,6 +154,8 @@ body {
     font-size: 30px;
     
 }
+
+/*Main Section with button*/
 
 header {
     display: flex;
@@ -327,11 +332,13 @@ footer {
     padding-right: 20px;
 }
 
-.menu span{
+.menu a {
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
-.menu span:hover{
+.menu a:hover{
     transition: 0.2s;
     color:rgba(255, 255, 255, 0.836);
 }
@@ -343,7 +350,7 @@ footer {
     margin-left:auto;
 }
 
-.newsletter input{
+.newsletter input {
     height: 30px;
     width: 200px;
 }
@@ -370,7 +377,7 @@ footer {
     text-align: center;
 }
 
-.author{
+.author {
     margin: auto auto 60px auto;
     font-size: 15px;
 }
