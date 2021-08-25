@@ -4,7 +4,9 @@
         <title> &quotTraining World&quot Website</title>
         <meta name = "author" content="Kacper Śleziak">
 
-        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/css/index.css">
+        <link rel="stylesheet" href="./src/css/navbar.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +16,8 @@
     <body>
 
         <nav>
-
             <div id="navbar">
-                <a class="logo_link" href="index.html">
+                <a class="logo_link" href="index.html"></a>
                     <div class="logo__navbar">
                         <img src=".//src/img/logo.png" alt="Logo">
 
@@ -26,7 +27,35 @@
                         </span>
                     </div>
                 </a>
+                
+                <!-- RWD NAVBAR -->
 
+                <div id="menu_button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div id="side_navbar">
+                    <div class="nav_top">
+                        <div id = "menu_text">
+                            Menu
+                        </div>
+                        
+                        <div id="close_button"> 
+                            <span>X</span> 
+                        </div>
+                    </div>
+                    
+                    <div id="links_container">
+                        <a href="about_us.html">About us</a>
+                        <a href="classes.html">Classes</a>
+                        <a href="#contact_scroll">Contact</a>
+                        <a href="blog.html">Blog</a>
+                    </div>
+                </div>
+ 
+                <!-- NORMAL NAVBAR -->
                 <div class ="links__box">
                     <div class="links">
                         <a class="link" id="about_us" href="about_us.html">About us</a>
@@ -188,7 +217,10 @@
                         <br>
                         
                         <input>
-                        <button type="submit">Sign up</button> 
+                        <button type="submit">Sign up</button>
+                        <br><br> 
+                        <span>Lorem ipsum dolor sit amet <br>
+                            consectetulla dicta quam fugit nihil.</span>
                     </div>
                 </div>
 
@@ -200,6 +232,6 @@
             </div>
         </footer> 
 
-        <script src=".//src/scripts/smooth_unhover.js"></script>
+        <script src=".//src/scripts/navbar.js"></script>
     </body>
 </html>
