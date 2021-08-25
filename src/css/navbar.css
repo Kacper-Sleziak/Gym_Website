@@ -149,6 +149,10 @@
     }
 
     #menu_button {
+        width: 50px;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 5px 0 5px;
         display: inline-block;
         cursor: pointer;
     }
@@ -159,6 +163,24 @@
         background-color: rgba(255, 255, 255, 0.788);
         margin: 6px 0;
         transition: 0.4s;
+      }
+
+      #menu_button:hover .bar1 {
+        background-color: rgba(255, 255, 255, 0.877);
+        width: 40px;
+        transition: 0.4s;
+      }
+
+      #menu_button:hover .bar3 {
+        background-color: rgba(255, 255, 255, 0.877);
+        width: 40px;
+        transition: 0.4s;
+    }
+
+      #menu_button:hover .bar2 {
+        background-color: rgba(255, 255, 255, 0.877);
+        margin-left:5px;
+        width: 30px;
       }
       
     .change .bar1 {
@@ -254,8 +276,26 @@
         color: rgb(255, 255, 255);
         transform: translate(-6px, 0);
     }
-
-
-
-
 }
+
+@media only screen and (max-width: 600px){
+    #navbar {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .logo__navbar {
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .logo__navbar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo__navbar span {
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+}
+
