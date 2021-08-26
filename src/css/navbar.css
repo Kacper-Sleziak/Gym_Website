@@ -143,7 +143,13 @@
     font-size: 30px;
 }
 
-@media (max-width: 1450px) {
+@media only screen and (max-width: 1450px) {
+
+    .logo__navbar {
+        margin: 0;
+        margin-right: auto;
+    }
+    
     .links__box {
         display: none;
     }

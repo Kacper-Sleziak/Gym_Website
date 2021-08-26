@@ -145,7 +145,6 @@ main {
     background-image: linear-gradient(rgb(229, 231, 229), rgba(229, 231, 229, 0));
     height: 140px;
     width: 100%;
-    margin-bottom: 220px;
 }
 
 @media only screen and (max-width: 600px){
