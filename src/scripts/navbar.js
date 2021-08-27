@@ -6,7 +6,7 @@ var side_nav = document.getElementById("side_navbar");
 function open_side_nav() {
     open_button.classList.toggle("change");
     links_container.style.opacity = "1";
-    side_nav.style.width = "150px";
+    side_nav.style.width = "250px";
 }
 
 function close_side_nav() {

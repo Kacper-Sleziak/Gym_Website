@@ -129,8 +129,12 @@ footer {
         font-size: 25px;
     }
 
+    .left_footer {
+    }
+
     .conntact {
-        width: 35%
+        margin-right: auto;
+        width: 65%
     }
 
     .menu {
@@ -145,14 +149,51 @@ footer {
         font-size: 12px;
     }
 
+    /* .conntact, .menu, .footer_section, .newsletter, .left_footer {
+        border: outset 1px red;
+    } */
+
 }
 
 @media only screen and (max-width: 800px){
 
+    .footer_section {
+        height: 400px;
+        align-items: flex-start;
+    }
+
+    .left_footer {
+        height: 280px;
+        flex-direction: column;
+    }
+
+    .conntact {
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    .menu {
+        margin-top:30px;
+        width: 100%;
+    }
+
+    .newsletter {
+        box-sizing: border-box;
+        height: 165px;
+        margin-top: auto;
+        margin-left: auto;
+    }
 }
 
 @media only screen and (max-width: 600px){
-    .footer_section{
-        height: 200px;
+    .footer_section {
+        height: 500px;
+        padding-left: 70px;
+        flex-direction: column;
+    }
+
+    .newsletter {
+        margin: 0;
+        margin-top: 40px;
     }
 }
