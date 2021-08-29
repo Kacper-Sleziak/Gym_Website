@@ -171,7 +171,9 @@ main {
         justify-content: center;
     }
 
-    .header__join__us button {
+    .header_box {
+        font-size: 40px;
+        border-radius: 0 0 40px 40px;
     }
 
 }

@@ -29,11 +29,9 @@ footer {
     height: 200px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .conntact {
-    margin-left: 0;
     margin-right: 50px;
     box-sizing: border-box;
     text-align: left;
@@ -129,9 +127,6 @@ footer {
         font-size: 25px;
     }
 
-    .left_footer {
-    }
-
     .conntact {
         margin-right: auto;
         width: 65%
@@ -148,10 +143,6 @@ footer {
     .author {
         font-size: 12px;
     }
-
-    /* .conntact, .menu, .footer_section, .newsletter, .left_footer {
-        border: outset 1px red;
-    } */
 
 }
 
