@@ -13,8 +13,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300;1,900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-
+    <body onload="loading()">
+        <div id="loader">
+            <div class ="loading_bg">
+                <img src=".//src/img/logo.png" alt="Logo">
+            </div>
+        </div> 
         <nav>
             <div id="navbar">
                 <a class="logo_link" href="index.html"></a>
@@ -98,7 +102,6 @@
         
         <main>
             <div class="information_section">
-                
                 <div class="header_box">
                     <span>
                         What We Can <br>
@@ -141,9 +144,6 @@
                             adipisicing elit. Quos sunt sint fugit
                         </span>   
                     </div>
-                </div>
-
-                <div id="information_main_box">
                     <div class="graphic_info_box">
                         <img src=.//src/img/weight.png>
                         <h1>
@@ -178,8 +178,6 @@
                             adipisicing elit. Quos sunt sint fugit
                         </span>   
                     </div>
-                </div>
-
             </div>
 
         </main>
@@ -233,5 +231,6 @@
         </footer> 
 
         <script src=".//src/scripts/navbar.js"></script>
+        <script src=".//src/scripts/load.js"></script>
     </body>
 </html>
