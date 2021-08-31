@@ -4,6 +4,7 @@
     border: 0;
     scroll-behavior: smooth;
 }
+
 /* Site Loading Screen */
 #loader {
     position: absolute;
@@ -175,8 +176,8 @@ main {
 
 .blur {
     background-image: linear-gradient(rgb(229, 231, 229), rgba(229, 231, 229, 0));
-    height: 140px;
     width: 100%;
+    height: 140px;
 }
 
 
@@ -255,7 +256,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
     .information_section {
         height: 2450px;
     }
