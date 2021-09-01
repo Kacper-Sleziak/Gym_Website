@@ -100,7 +100,7 @@ main {
 
 /* Information Section */
 .information_section {
-    background-color: rgb(229, 231, 229);
+    background-color: rgb(247, 245, 245);
     min-height: 1200px;
     width: 100%;
 }
@@ -137,7 +137,7 @@ main {
 }
 
 .graphic_info_box {
-    background-color: rgb(229, 231, 229);
+    background-color: rgb(247, 245, 245);
     box-sizing: border-box;
     font-size: 15px;
     border: outset 1px #B7BDBA;

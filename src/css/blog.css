@@ -15,7 +15,6 @@ body {
     background-attachment: fixed;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
 }
 
 .blog_header {
@@ -52,6 +51,9 @@ body {
 }
 
 .post {
+    position: relative;
+    color: rgb(71, 71, 71);
+    margin: 40px 0 40px 0;
 }
 
 .img_box {
@@ -59,7 +61,7 @@ body {
     box-sizing: border-box;
 }
 
-.img_box img {
+.post_img {
     display: inline-block;
     margin-top: auto;
     height: 250px;
@@ -88,6 +90,7 @@ body {
 }
 
 .read_more {
+    position: absolute;
     box-sizing: unset;
     padding: 5px;
     margin-top: 7px;
@@ -110,10 +113,11 @@ body {
     margin-bottom: 5px;   
 }
 
-.post {
-    color: rgb(71, 71, 71);
-    margin: 40px 0 40px 0;
+.post_short{
+    display: block;
+    width: 370px;
 }
+
 
 @media only screen and (max-width: 1900px){
     .articles{
@@ -161,5 +165,24 @@ body {
     .blog_header span{
         margin-left: 75px;
     }
+}
 
+@media only screen and (max-width: 600px){
+
+    .articles {
+        height: 3500px;
+    }
+
+    .img_box img {
+        height: 160px;
+    }
+
+    .post h1{
+        font-size: 28px;
+    }
+
+    .post_short {
+        width: 240px;
+        font-size: 13px;
+    }
 }
